@@ -1,0 +1,42 @@
+包名：me.tictok.linear
+命令：adb shell monkey -p me.tictok.linear -v -v --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes 1000 >D:\monkeyLog\test0508.txt
+随机事件比例：
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+报错部分：
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+    // Injection Failed
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+    // Injection Failed
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+    // Injection Failed
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+    // Injection Failed
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(464.52084,1559.1001)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(467.55292,1559.2067)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(470.61182,1559.3875)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(472.68945,1559.5356)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(473.91086,1559.6788)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(474.23053,1559.8671)
+    // Injection Failed
+分析：
+1.操作过快时频繁出现页面崩溃
+2.部分点击无效
