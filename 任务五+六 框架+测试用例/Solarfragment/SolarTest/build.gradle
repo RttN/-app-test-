@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/commons-io-2.6.jar')
+    implementation files('libs/commons-lang3-3.8.jar')
+    implementation files('libs/java-client-7.0.0.jar')
+    implementation files('libs/selenium-server-standalone-3.141.59.jar')
+    implementation 'junit:junit:4.12'
+    implementation 'org.testng:testng:6.9.6'
+    implementation 'com.google.guava:guava:27.1-jre'
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+sourceCompatibility = "7"
+targetCompatibility = "7"
