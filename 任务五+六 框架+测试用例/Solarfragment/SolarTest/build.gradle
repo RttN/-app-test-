@@ -9,6 +9,7 @@ dependencies {
     implementation 'junit:junit:4.12'
     implementation 'org.testng:testng:6.9.6'
     implementation 'com.google.guava:guava:27.1-jre'
+    implementation files('libs/freemarker.jar')
 }
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
